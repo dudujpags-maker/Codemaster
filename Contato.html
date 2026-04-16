@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - CodeMaster</title>
+    <link href="style.css" rel="stylesheet">
+
+
+    <script src="javascript.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topo">
+        <img src="codemaster3.png" alt="Logo da CodeMaster Solutions" class="logo">
+    </header>
+
+    <nav>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="Sobre.html">Sobre</a>
+            <a href="Servicos.html">Serviços</a>
+            <a href="Novidades.html">Novidades</a>
+            <a href="Contato.html">Contato</a>
+        </div>
+    </nav>
+
+    <br>
+
+    <main>
+        <div class="texto animar">
+            <h2>Entre em Contato</h2>
+
+            <p>Tem um projeto em mente? Fale com a gente!</p>
+
+            <p>Endereço: Avenida Rio Branco, 1500 - RJ</p>
+            <p>Telefone: (21) 99999-8888</p>
+            <br>
+            <form>
+                <fieldset><br>
+                    <legend>Entre em contato conosco</legend>
+                    <label>Nome:</label><br>
+                    <input type="text" placeholder="Digite seu nome">
+                    <br><br>
+
+                    <label>Sobrenome:</label><br>
+                    <input type="text" placeholder="Digite seu sobrenome">
+
+
+                    <br><br>
+                    <label>Email:</label><br>
+                    <input type="email" placeholder="example@email.com">
+
+                    <br><br>
+
+                    <label>País:</label><br>
+                    <input type="text" maxlength="20" placeholder="Brasil, Uruguai, Argentina...">
+                    <br><br>
+                    <label>Estado:</label><br>
+                    <input type="text" placeholder="Rio de janeiro">
+                    <br><br>
+                    <label>Empresa:</label><br>
+                    <input type="text" placeholder="Dell, Samsung, Lenovo">
+
+                    <br><br>
+                    <label>Telefone para contato</label><br><br>
+                    <input type="tel" placeholder="+55 21 99999-9999" pattern="[0-9]" maxlength="15" required><br><br>
+                    <br>
+                    <label>Mensagem:</label>
+                    <br>
+                    <textarea rows="5" cols="50"
+                        placeholder="Escreva sua mensagem aqui, ela é de muita importancia para nós."
+                        maxlength="256"></textarea>
+
+                    <br><br><br>
+
+                    <button onclick="alert('Dados enviados com sucesso! Em breve entraremos em contato')" type="submit"
+                        class="btn">Enviar</button>
+                    <br>
+                </fieldset>
+            </form>
+        </div>
+
+        <br>
+
+        <div class="texto animar">
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li>Instagram: @codemastersolutions</li>
+                <li>Facebook: /codemastersolutions</li>
+                <li>LinkedIn: /company/codemaster</li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="texto animar">
+            <h3>Parceiros</h3>
+            <ul>
+                <li>HostFast</li>
+                <li>DataSec</li>
+                <li>DesignCriativo</li>
+            </ul>
+        </div>
+    </main>
+
+    <br>
+
+    <div class="botao"><button class="btn" onclick="ir4()">Página Anterior</button>
+        <button class="btn" onclick="ir()">Início</button>
+    </div>
+
+
+    <footer>
+        <p>© 2026 CodeMaster Solutions</p>
+    </footer>
+
+</body>
+
+</html>

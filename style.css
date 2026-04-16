@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(backgroud2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.topo {
+    text-align: center;
+
+    padding-top: 20px;
+
+}
+
+.logo {
+    max-width: 600px;
+
+    height: auto;
+
+}
+
+
+nav {
+    background-color: dodgerblue;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid rgb(11, 36, 90);
+    border-radius: 10px;
+}
+
+
+
+.menu a {
+    color: whitesmoke;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.menu a:hover {
+    background-color: rgb(16, 107, 182);
+    color: rgb(253, 251, 251);
+    border-radius: 10px;
+    Transition: 1s;
+}
+
+.texto {
+    background-color: whitesmoke;
+    padding: 80px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#texto img {
+    float: right;
+    margin-left: 15px;
+    width: 200px;
+    height: auto;
+}
+
+h2,
+h3,
+h4,
+p {
+    color: black;
+}
+
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer {
+    background-color: dodgerblue;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    border: 3px solid rgb(11, 36, 90);
+    border-radius: 10px;
+
+}
+
+footer p {
+    color: whitesmoke;
+    padding: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*.texto {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.6s;
+}*/
+
+.texto {
+    background-color: whitesmoke;
+    padding: 80px;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.animar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.6s;
+}
+
+.animar.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn {
+    background: linear-gradient(135deg, rgb(200, 206, 212), #eeeff0);
+    color: rgb(26, 23, 23);
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #4265b1, rgb(216, 219, 223));
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+fieldset {
+    border-radius: 5px;
+}
+
+div {
+    width: 700px;
+    margin: auto;
+}
+
+nav,
+footer {
+    width: 900px;
+    margin: auto;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
