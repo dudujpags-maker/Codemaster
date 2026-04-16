@@ -6,54 +6,59 @@ body {
     background-size: cover;
 }
 
+/* TOPO */
 .topo {
     text-align: center;
-
     padding-top: 20px;
-
 }
 
 .logo {
-    max-width: 600px;
-
+    max-width: 100%;
     height: auto;
-
 }
 
-
+/* NAV */
 nav {
     background-color: dodgerblue;
     padding: 20px;
     text-align: center;
     border: 3px solid rgb(11, 36, 90);
     border-radius: 10px;
+
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
 }
-
-
 
 .menu a {
     color: whitesmoke;
     padding: 14px 20px;
     text-decoration: none;
     font-weight: bold;
-
+    display: inline-block;
 }
 
 .menu a:hover {
     background-color: rgb(16, 107, 182);
     color: rgb(253, 251, 251);
     border-radius: 10px;
-    Transition: 1s;
+    transition: 1s;
 }
 
+/* CONTEÚDO */
 .texto {
     background-color: whitesmoke;
-    padding: 80px;
+    padding: 40px;
     text-align: left;
     border-radius: 5px;
     border: 1px solid grey;
+
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
 }
 
+/* IMAGEM */
 #texto img {
     float: right;
     margin-left: 15px;
@@ -61,50 +66,36 @@ nav {
     height: auto;
 }
 
-h2,
-h3,
-h4,
-p {
-    color: black;
-}
-
-
+/* TITULOS */
 h1 {
     text-align: center;
     color: whitesmoke;
 }
 
+h2, h3, h4, p {
+    color: black;
+}
+
+/* FOOTER */
 footer {
     background-color: dodgerblue;
-    width: auto;
     height: 50px;
     text-align: center;
     border: 3px solid rgb(11, 36, 90);
     border-radius: 10px;
 
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
 }
 
 footer p {
     color: whitesmoke;
-    padding: none;
     font-size: 15px;
     font-weight: bold;
 }
 
-/*.texto {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.6s;
-}*/
-
-.texto {
-    background-color: whitesmoke;
-    padding: 80px;
-    text-align: left;
-    border-radius: 5px;
-    border: 1px solid grey;
-}
-
+/* ANIMAÇÃO */
 .animar {
     opacity: 0;
     transform: translateY(30px);
@@ -116,6 +107,7 @@ footer p {
     transform: translateY(0);
 }
 
+/* BOTÕES */
 .btn {
     background: linear-gradient(135deg, rgb(200, 206, 212), #eeeff0);
     color: rgb(26, 23, 23);
@@ -138,24 +130,53 @@ footer p {
     transform: scale(0.98);
 }
 
+/* BOTÕES CONTAINER */
+.botao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* FIELDSET */
 fieldset {
     border-radius: 5px;
 }
 
-div {
-    width: 700px;
-    margin: auto;
+
+
+@media (max-width: 768px) {
+
+    /* MENU vira vertical */
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* mais compacto */
+    .texto {
+        padding: 20px;
+    }
+
+    /* deixa de flutuar */
+    #texto img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* BOTÕES em coluna */
+    .botao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 80%;
+    }
 }
 
-nav,
-footer {
-    width: 900px;
-    margin: auto;
-}
 
-.botao{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    
-}
+
